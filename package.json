@@ -4,7 +4,7 @@
     "description": "Resaltador de sintaxis para lenguaje estructurado",
     "version": "1.0.0",
     "publisher": "rmbellusci",
-    "icon": "/logo.png",
+    "icon": "logo.png",
     "repository": "https://github.com/rodrigomb81/lenguaje-estructurado",
     "engines": {
         "vscode": "^1.12.0"
