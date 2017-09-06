@@ -1,0 +1,72 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Lenguaje Estructurado",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.estructurado",
+				"match": "\\b(ACTUALIZAR|HAYA|SIGUIENTE|EL|DESDE|RECIBIENDO|SI|ENTONCES|FINSI|FINMIENTRAS|NRO|EXISTE|FUE|ENCONTRADA|ENCONTRADO|ULTIMO|SUMAR|CONTAR|ELP|PROCESO|SALIR|RETORNAR|LEER|INVOCAR|A|CON|RECIBIR|ENVIAR|ENTRE|Y|O|DECLARAR|DONDE|RECIBIR|DE|TERMINADOR|ENCONTRAR|EN|ALMACEN|PARA|CADA|FINPARA|AGREGAR|MIENTRAS|FINMIENTRAS|COMENZAR|FIN)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function",
+					"match": "\\b(CALCULAR|HOY|UNIR_CONJUNTOS)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language",
+					"match": "\\b(verdadero|falso|NULL)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\b\\d+(.\\d+)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.estructurado",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.estructurado",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "string.quoted.double.estructurado",
+			"begin": "//",
+			"end": "\n",
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.estructurado"
+}

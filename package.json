@@ -1,0 +1,27 @@
+{
+    "name": "lenguaje-estructurado",
+    "displayName": "Lenguaje Estructurado",
+    "description": "Resaltador de sintaxis para lenguaje estructurado",
+    "version": "1.0.0",
+    "publisher": "rmbellusci",
+    "icon": "./logo.png",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "estructurado",
+            "aliases": ["Lenguaje Estructurado", "estructurado"],
+            "extensions": [".est"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "estructurado",
+            "scopeName": "source.estructurado",
+            "path": "./syntaxes/estructurado.tmLanguage.json"
+        }]
+    }
+}
