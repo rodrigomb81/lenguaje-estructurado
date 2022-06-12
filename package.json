@@ -2,7 +2,7 @@
     "name": "lenguaje-estructurado",
     "displayName": "Lenguaje Estructurado",
     "description": "Resaltador de sintaxis para lenguaje estructurado",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "rmbellusci",
     "icon": "logo.png",
     "repository": "https://github.com/rodrigomb81/lenguaje-estructurado",
@@ -10,7 +10,7 @@
         "vscode": "^1.12.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{
